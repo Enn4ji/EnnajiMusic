@@ -1,0 +1,88 @@
+{
+  "_author": "Rayan elhabib (skz_rayan23)",
+  "_project": "BotMusicDiscord",
+  "_description": "Configuration des statistiques - Créé par Rayan elhabib",
+  "stats": {
+    "enabled": true,
+    "independent": true,
+    "noLavalink": true,
+    "autoSave": true,
+    "cacheEnabled": true
+  },
+  "storage": {
+    "type": "file",
+    "format": "json",
+    "backupEnabled": true,
+    "compression": false,
+    "encryption": false
+  },
+  "tracking": {
+    "userStats": true,
+    "serverStats": true,
+    "trackStats": true,
+    "listeningSessions": true,
+    "achievements": true,
+    "platformDetection": true
+  },
+  "performance": {
+    "cacheTimeout": 600000,
+    "saveInterval": 600000,
+    "batchSize": 100,
+    "maxSessions": 100,
+    "maxTracks": 1000
+  },
+  "achievements": {
+    "enabled": true,
+    "autoUnlock": true,
+    "notifications": true,
+    "levels": [
+      {
+        "name": "FIRST_LISTEN",
+        "description": "Première écoute",
+        "requirement": 1,
+        "type": "playCount"
+      },
+      {
+        "name": "MUSIC_LOVER",
+        "description": "10 tracks écoutés",
+        "requirement": 10,
+        "type": "playCount"
+      },
+      {
+        "name": "HOUR_LISTENER",
+        "description": "1 heure d'écoute",
+        "requirement": 3600000,
+        "type": "totalTime"
+      },
+      {
+        "name": "DEDICATED_LISTENER",
+        "description": "10 heures d'écoute",
+        "requirement": 36000000,
+        "type": "totalTime"
+      },
+      {
+        "name": "MULTI_SERVER",
+        "description": "Écoute sur 3 serveurs",
+        "requirement": 3,
+        "type": "serverCount"
+      }
+    ]
+  },
+  "platforms": {
+    "detection": true,
+    "supported": [
+      "YouTube",
+      "Spotify",
+      "SoundCloud",
+      "Deezer",
+      "Apple Music",
+      "Other"
+    ]
+  },
+  "backup": {
+    "enabled": true,
+    "interval": 86400000,
+    "maxBackups": 7,
+    "compression": true
+  }
+}

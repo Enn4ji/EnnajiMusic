@@ -1,0 +1,57 @@
+{
+  "_author": "Rayan elhabib (skz_rayan23)",
+  "_project": "BotMusicDiscord",
+  "_description": "Configuration des optimisations - Créé par Rayan elhabib",
+  "cache": {
+    "userStatsTimeout": 600000,
+    "searchTimeout": 300000,
+    "maxCacheSize": 1000,
+    "cleanupInterval": 300000
+  },
+  "performance": {
+    "healthCheckInterval": 30000,
+    "memoryCleanupInterval": 300000,
+    "statsSaveInterval": 600000,
+    "maxResponseTime": 5000
+  },
+  "plugins": {
+    "autoDJ": {
+      "enabled": true,
+      "autoQueueSize": 5,
+      "genreMixing": true
+    },
+    "smartQueue": {
+      "enabled": true,
+      "historySize": 20,
+      "autoOptimize": true
+    },
+    "voiceEffects": {
+      "enabled": true,
+      "maxEffects": 3,
+      "autoCleanup": true
+    }
+  },
+  "ai": {
+    "recommendations": {
+      "enabled": true,
+      "maxResults": 10,
+      "learningRate": 0.1
+    },
+    "moodAnalysis": {
+      "enabled": true,
+      "accuracy": 0.85
+    }
+  },
+  "monitoring": {
+    "metrics": {
+      "enabled": true,
+      "maxHistory": 1000,
+      "alertThreshold": 0.9
+    },
+    "health": {
+      "enabled": true,
+      "autoRestart": false,
+      "maxRetries": 3
+    }
+  }
+}
