@@ -34,7 +34,7 @@ if (ENV_TOKEN && ENV_TOKEN !== NORMALIZED_TOKEN) {
 }
 
 // Fail fast if no token provided
-if (!NORMALIZED_TOKEN || ENV_TOKEN === 'your_bot_token_here') {
+if (!NORMALIZED_TOKEN || ENV_TOKEN === 'MTQwOTI4NzA3OTk5MjYyMzIyNw.GHqRHM.5DlhCHYYWM-9UO1h0M3p086ktjWAqmeJ8WpKGk') {
     console.error('❌ DISCORD_TOKEN manquant ou non configuré !');
     console.error('📝 Créez un fichier .env avec votre DISCORD_TOKEN ou modifiez config.js');
     console.error('🔑 Obtenez votre token sur: https://discord.com/developers/applications');
@@ -48,7 +48,7 @@ if (REGISTER_SLASH) {
     const rest = new REST({ version: '10' }).setToken(NORMALIZED_TOKEN);
     (async () => {
         try {
-            if (!config.CLIENT_ID || config.CLIENT_ID === 'your_client_id_here') {
+            if (!config.CLIENT_ID || config.CLIENT_ID === '1409287079992623227') {
                 console.warn('⚠️ CLIENT_ID manquant. Les slash commands ne seront pas enregistrés automatiquement.');
                 console.warn('📝 Pour activer /playstr, modifiez config.js avec votre CLIENT_ID');
                 console.warn('🔑 Obtenez votre CLIENT_ID sur: https://discord.com/developers/applications');
