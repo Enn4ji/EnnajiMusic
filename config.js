@@ -1,10 +1,10 @@
 // Configuration du bot Discord
 module.exports = {
     // Token du bot (à remplacer par votre vrai token)
-    DISCORD_TOKEN: process.env.DISCORD_TOKEN || 'YOUR_TOKEN_HERE',
+    DISCORD_TOKEN: process.env.DISCORD_TOKEN || "MTQwOTI4NzA3OTk5MjYyMzIyNw.GHqRHM.5DlhCHYYWM-9UO1h0M3p086ktjWAqmeJ8WpKGk",
     
     // ID du client Discord (à remplacer par votre vrai client ID)
-    CLIENT_ID: process.env.CLIENT_ID || 'YOUR_CLIENT_Id_HERE',
+    CLIENT_ID: process.env.CLIENT_ID || "1409287079992623227",
     
     // Préfixe pour les commandes par message
     PREFIX: process.env.PREFIX || '+',
