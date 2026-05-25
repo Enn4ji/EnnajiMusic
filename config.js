@@ -26,5 +26,5 @@ module.exports = {
     DJ_ROLE_NAME: process.env.DJ_ROLE_NAME || 'DJ',
     
     // Cooldown pour les commandes
-    PADD_COOLDOWN_SECONDS: process.env.PADD_COOLDOWN_SECONDS || 5
+    PADD_COOLDOWN_SECONDS: process.env.PADD_COOLDOWN_SECONDS || 0
 };
