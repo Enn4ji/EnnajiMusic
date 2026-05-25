@@ -159,9 +159,7 @@ class MusicCog {
                     nameColor: '#111827',
                     author: track.info.author,
                     authorColor: '#374151',
-                    startTime: '0:00',
-                    endTime: new Date(track.info.length).toISOString().substr(14, 5),
-                    timeColor: '#111827',
+
                 });
                 // Best-effort generation; if CDN blocks, fallback silently
                 try {
