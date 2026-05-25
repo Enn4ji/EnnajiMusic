@@ -7,7 +7,7 @@ module.exports = {
     CLIENT_ID: process.env.CLIENT_ID || 'YOUR_CLIENT_Id_HERE',
     
     // Préfixe pour les commandes par message
-    PREFIX: process.env.PREFIX || '+',
+    PREFIX: process.env.PREFIX || 'j!',
     
     // Activer les slash commands (/) - IMPORTANT pour /playstr
     REGISTER_SLASH: process.env.REGISTER_SLASH || 'true',
