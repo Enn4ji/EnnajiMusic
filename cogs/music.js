@@ -14,10 +14,10 @@ const path = require('path');
 class MusicCog {
     constructor(client) {
         this.client = client;
-        this.prefix = process.env.PREFIX || '+';
+        this.prefix = process.env.PREFIX || 'j!';
         
         // Watermark - Créé par Rayan elhabib (skz_rayan23)
-        this.author = 'Rayan elhabib (skz_rayan23)';
+        this.author = 'Ennahi (httpsmizo06)';
         this.projectName = 'BotMusicDiscord';
         this.paddCooldownSeconds = Number(process.env.PADD_COOLDOWN_SECONDS || 5);
         this.userPaddCooldownUntil = new Map();
@@ -84,7 +84,7 @@ class MusicCog {
         client.on('ready', async () => {
             this.riffy.init(client.user.id);
             console.log('MusicCog: Riffy initialized');
-            console.log(`🎵 BotMusicDiscord by Rayan elhabib (skz_rayan23) - Music module loaded`);
+            console.log(`🎵 EnnvjiMusic by Ennaji (httpsmizo06) - Music module loaded`);
             
             // Load user statistics
             try {
@@ -116,7 +116,7 @@ class MusicCog {
 
         this.riffy.on("nodeError", (node, error) => {
             console.error(`MusicCog: Node "${node.name}" error: ${error.message}`);
-            console.error(`BotMusicDiscord by Rayan elhabib (skz_rayan23) - Error logged`);
+            console.error(`EnnvjiMusic by Ennaji (httpsmizo06) - Error logged`);
         });
 
         // 🎵 SYSTÈME DE STATISTIQUES INDÉPENDANT (SANS LAVALINK)
@@ -153,10 +153,10 @@ class MusicCog {
                         const canvas = createCanvas(w, h);
                         const ctx = canvas.getContext('2d');
                         const grad = ctx.createLinearGradient(0, 0, w, h);
-                        grad.addColorStop(0, '#0EA5E9');   // sky-500
-                        grad.addColorStop(0.33, '#8B5CF6'); // violet-500
-                        grad.addColorStop(0.66, '#F59E0B'); // amber-500
-                        grad.addColorStop(1, '#10B981');    // emerald-500
+                        grad.addColorStop(0, '#050505');   // black-500
+                        grad.addColorStop(0.33, '#050505'); // black-500
+                        grad.addColorStop(0.66, '#050505'); // black-500
+                        grad.addColorStop(1, '#050505');    // black-500
                         ctx.fillStyle = grad;
                         ctx.fillRect(0, 0, w, h);
                         return canvas.toBuffer('image/png');
