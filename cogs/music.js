@@ -16,7 +16,7 @@ class MusicCog {
         this.client = client;
         this.prefix = process.env.PREFIX || 'j!';
         
-        // Watermark - Créé par Rayan elhabib (skz_rayan23)
+        // Watermark - Créé par Ennaji (httpsmizo06)
         this.author = 'Ennahi (httpsmizo06)';
         this.projectName = 'BotMusicDiscord';
         this.paddCooldownSeconds = Number(process.env.PADD_COOLDOWN_SECONDS || 5);
@@ -159,7 +159,9 @@ class MusicCog {
                     nameColor: '#111827',
                     author: track.info.author,
                     authorColor: '#374151',
+                    author: bot.speak = true,
 
+                    
                 });
                 // Best-effort generation; if CDN blocks, fallback silently
                 try {
