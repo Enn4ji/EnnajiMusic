@@ -146,24 +146,7 @@ class MusicCog {
                 this.smoothBaseTimeByGuild.set(gid, Date.now());
             } catch {}
             try {
-                // Background dégradé multi-couleurs généré à la volée (pas d'image externe)
-                const gradientPng = (() => {
-                    try {
-                        const w = 1200, h = 400;
-                        const canvas = createCanvas(w, h);
-                        const ctx = canvas.getContext('2d');
-                        const grad = ctx.createLinearGradient(0, 0, w, h);
-                        grad.addColorStop(0, '#050505');   // black-500
-                        grad.addColorStop(0.33, '#050505'); // black-500
-                        grad.addColorStop(0.66, '#050505'); // black-500
-                        grad.addColorStop(1, '#050505');    // black-500
-                        ctx.fillStyle = grad;
-                        ctx.fillRect(0, 0, w, h);
-                        return canvas.toBuffer('image/png');
-                    } catch {
-                        return null;
-                    }
-                })();
+
                 const musicard = await Classic({
                     // Utiliser un dégradé si dispo, sinon fond clair
                     backgroundImage: gradientPng || undefined,
