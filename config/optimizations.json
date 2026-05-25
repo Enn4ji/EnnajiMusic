@@ -1,7 +1,7 @@
 {
   "_author": "Ennaji",
-  "_project": "BotMusicDiscord",
-  "_description": "Configuration des optimisations - Créé par Rayan elhabib",
+  "_project": "EnnvjiMusic",
+  "_description": "Configuration des optimisations - Créé par Ennaji",
   "cache": {
     "userStatsTimeout": 600000,
     "searchTimeout": 300000,
