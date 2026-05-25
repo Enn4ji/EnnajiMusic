@@ -33,7 +33,7 @@
   },
   "achievements": {
     "enabled": true,
-    "autoUnlock": true,
+    "autoUnlock": false,
     "notifications": true,
     "levels": [
       {
