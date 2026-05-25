@@ -12,7 +12,7 @@
   "storage": {
     "type": "file",
     "format": "json",
-    "backupEnabled": true,
+    "backupEnabled": false,
     "compression": false,
     "encryption": false
   },
