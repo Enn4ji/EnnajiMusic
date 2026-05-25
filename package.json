@@ -1,7 +1,7 @@
 {
-  "name": "botmusicdiscord",
+  "name": "EnnvjiMusic",
   "version": "1.0.0",
-  "description": "Bot de musique Discord avec Lavalink - Créé par Rayan elhabib (skz_rayan23)",
+  "description": "Bot de musique Discord avec Lavalink - Créé par Ennaji (httpsmizo06)",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -16,7 +16,7 @@
     "riffy",
     "discord.js"
   ],
-  "author": "Rayan elhabib (skz_rayan23)",
+  "author": "Ennaji (httpsmizo06)",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
